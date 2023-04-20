@@ -105,6 +105,7 @@
     </div>
  </div>
 
+ <script src="{{ asset('js/app.js') }}"></script>
  <script>
      const el = document.getElementById('messages')
      el.scrollTop = el.scrollHeight

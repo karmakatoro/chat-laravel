@@ -30,6 +30,7 @@ class ChatController extends Controller
     public function store(Request $request)
     {
         event(new ChatMessageEvent('Karma Katoro', $request->message));
+        return response()->json(['success'=>'chat message sent']);
     }
 
     /**
